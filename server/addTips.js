@@ -2,8 +2,6 @@ const express = require("express");
 const router = express.Router();
 const mongo = require("../DB/addTips")
 
-const mongoAddDonor = require("../DB/addTips")
-
 //write your code here 
 
 router.get('/test', (req, res) => {

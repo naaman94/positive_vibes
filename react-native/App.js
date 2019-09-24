@@ -1,114 +1,199 @@
-/**
- * Sample React Native App
- * https://github.com/facebook/react-native
- *
- * @format
- * @flow
- */
+import React, { Component } from 'react'
+import { Text, View } from 'react-native'
+import List from './componenets/list'
+export default class App extends Component {
+  state = {
+    tips: [{
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "123456 789 012345 6789 0123 45678 9012 34567890 12345 6789 012345 67890 1234567 890123456 789012345678 90123456789012 34 56789 0123456789012 345678901 234567 890123456 789012345 6789012345 6789012 3 4 5 678901 23456 7890123456 789012345 6789 01234567890 1234 5678 9012 34567 8901 23456789012345",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 2
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 1
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 3
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 4
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 2
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 1
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 1
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 3
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "0000000000000000",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 0
+    }, {
+      _id: "5d887650a9d8ef3da535054b",
+      like: 4,
+      dislike: 80,
+      tip: "1234567789123465798123",
+      author: "Orayb",
+      authorId: "Ranaid00099",
+      dateOfPublish: "2019-05-06T08:28:14.929Z",
+      __v: 0,
+      category: 1
+    }]
+  }
 
-import React, {Fragment} from 'react';
-import {
-  SafeAreaView,
-  StyleSheet,
-  ScrollView,
-  View,
-  Text,
-  StatusBar,
-} from 'react-native';
+  render() {
+    const { } = this;
+    const { tips } = this.state;
 
-import {
-  Header,
-  LearnMoreLinks,
-  Colors,
-  DebugInstructions,
-  ReloadInstructions,
-} from 'react-native/Libraries/NewAppScreen';
-
-const App = () => {
-  return (
-    <Fragment>
-      <StatusBar barStyle="dark-content" />
-      <SafeAreaView>
-        <ScrollView
-          contentInsetAdjustmentBehavior="automatic"
-          style={styles.scrollView}>
-          <Header />
-          {global.HermesInternal == null ? null : (
-            <View style={styles.engine}>
-              <Text style={styles.footer}>Engine: Hermes</Text>
-            </View>
-          )}
-          <View style={styles.body}>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Step One</Text>
-              <Text style={styles.sectionDescription}>
-                Edit <Text style={styles.highlight}>App.js</Text> to change this
-                screen and then come back to see your edits.
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>See Your Changes</Text>
-              <Text style={styles.sectionDescription}>
-                <ReloadInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Debug</Text>
-              <Text style={styles.sectionDescription}>
-                <DebugInstructions />
-              </Text>
-            </View>
-            <View style={styles.sectionContainer}>
-              <Text style={styles.sectionTitle}>Learn More</Text>
-              <Text style={styles.sectionDescription}>
-                Read the docs to discover what to do next:
-              </Text>
-            </View>
-            <LearnMoreLinks />
-          </View>
-        </ScrollView>
-      </SafeAreaView>
-    </Fragment>
-  );
-};
-
-const styles = StyleSheet.create({
-  scrollView: {
-    backgroundColor: Colors.lighter,
-  },
-  engine: {
-    position: 'absolute',
-    right: 0,
-  },
-  body: {
-    backgroundColor: Colors.white,
-  },
-  sectionContainer: {
-    marginTop: 32,
-    paddingHorizontal: 24,
-  },
-  sectionTitle: {
-    fontSize: 24,
-    fontWeight: '600',
-    color: Colors.black,
-  },
-  sectionDescription: {
-    marginTop: 8,
-    fontSize: 18,
-    fontWeight: '400',
-    color: Colors.dark,
-  },
-  highlight: {
-    fontWeight: '700',
-  },
-  footer: {
-    color: Colors.dark,
-    fontSize: 12,
-    fontWeight: '600',
-    padding: 4,
-    paddingRight: 12,
-    textAlign: 'right',
-  },
-});
-
-export default App;
+    return (
+      <View>
+        <List tips={tips} />
+      </View>
+    )
+  }
+}
